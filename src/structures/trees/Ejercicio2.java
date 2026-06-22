@@ -22,16 +22,12 @@ public class Ejercicio2 {
             return null;
         }
 
-
         Node<Integer> nuevoNodo = new Node<>(actual.getValue());
 
-        
         nuevoNodo.setLeft(invertirArbolRecursivo(actual.getRight()));
         nuevoNodo.setRight(invertirArbolRecursivo(actual.getLeft()));
 
         return nuevoNodo;
-        
-
     }
 
     private void preOrderRecursivo(Node<Integer> actual,int nivel) {
@@ -44,7 +40,7 @@ public class Ejercicio2 {
 
 
         for (int i = 0; i < nivel; i++) {
-            System.out.print("       "); 
+            System.out.print("   "); 
         }
         
         

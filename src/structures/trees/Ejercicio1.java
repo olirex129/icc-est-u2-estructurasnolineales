@@ -23,7 +23,7 @@ public class Ejercicio1 {
 
 
         for (int i = 0; i < nivel; i++) {
-            System.out.print("      "); 
+            System.out.print("   "); 
         }
         
 
@@ -31,7 +31,7 @@ public class Ejercicio1 {
 
         preOrderRecursivo(actual.getLeft(), nivel + 1);
     }
-    
+
 }
 
 
