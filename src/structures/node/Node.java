@@ -54,6 +54,8 @@ public class Node<T> {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    
     
     
 }
