@@ -26,4 +26,16 @@ Finalizamos la clase IntTree con los ultimos metodos, obtener el peso, la altura
 
 Empezamos a hacer diferentes ejercios los cuales sirven para comprender como funcionan los metodos recursivos en los arboles.
 
+**Fecha:** [29 de Junio de 2026]
+
+**Descripcion:**
+
+Empezamos a crear diferentes metodos de Set para poder ver las caracteristicas y ventajas de usar los Sets y como funcionan las estrcuturas de Sets que ocupan los Sets creados por Java, HashSet, LinkedHashSet y TreeSet, ademas creamos 2 clases, la primera para poder crear diferentes Sets para ver como funcionan y la otra (Contacto) la cual sirve para poder tener una clase como variable
+
+**Fecha:** [1 de Julio de 2026]
+
+**Descripcion:**
+
+El objetivo de esta clase fue de poder conocer como funciona los diccionarios, para que son utiles y como se pueden hacer en codigo,
+
 

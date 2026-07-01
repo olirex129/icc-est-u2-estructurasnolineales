@@ -1,6 +1,10 @@
 import java.util.List;
+import java.util.Set;
 
+import structures.Models.Contacto;
 import structures.Models.Persona;
+import structures.collections.maps.Maps;
+import structures.collections.set.Sets;
 import structures.node.Node;
 import structures.trees.BinaryTree;
 import structures.trees.Ejercicio1;
@@ -12,7 +16,8 @@ import structures.trees.IntTree;
 public class App {
     public static void main(String[] args) throws Exception {
         // runIntTree();
-        runEjercicios();
+        // runEjercicios();
+        runSets();
     }
 
     public static void runIntTree() {
@@ -171,4 +176,50 @@ public static void imprimirListotas(List<List<Node>> niveles){
             System.out.println();
         }
 }
+
+
+    public static void runSets(){
+        Sets sets = new Sets();
+
+        System.out.println("*: HashSet: ");
+        Set<String> hasSet = sets.construirHashSet();
+        System.out.println(hasSet);
+        System.out.println("Size = " + hasSet.size());
+        System.out.println(hasSet.contains("F"));
+
+        System.out.println("////////////////////////////////////////////////////////////");
+
+        System.out.println("*: LinkedHashSet: ");
+        Set<String> lSet = sets.construirLinkedHashSet();
+        System.out.println(lSet);
+        System.out.println("Size = " + lSet.size());
+        System.out.println(lSet.contains("F"));
+
+        System.out.println("////////////////////////////////////////////////////////////");
+        
+        System.out.println("*: TreeSet: ");
+        Set<String> TreeSet = sets.construirTreeSet();
+        System.out.println(TreeSet); // imprime en InOrder
+        System.out.println("Size = " + TreeSet.size());
+        System.out.println(TreeSet.contains("F"));
+
+        System.out.println("////////////////////////////////////////////////////////////");
+        
+        System.out.println("*: HashSet: ");
+        Set<Contacto> hCSet = sets.contruirHashSetContacto();
+        System.out.println(hCSet);
+        System.out.println("Size = " + hCSet.size());
+
+        System.out.println("////////////////////////////////////////////////////////////");
+        
+        System.out.println("*: TreeSetConComparador: ");
+        Set<Contacto> tCSet = sets.construirTreeSetConComparador();
+        System.out.println(tCSet);
+        System.out.println("Size = " + tCSet.size());
+
+        Maps maps = new Maps();
+        maps.contruirMap();
+        maps.cTreeHashMap();
+
+    }
 }
